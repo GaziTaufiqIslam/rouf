@@ -29,12 +29,39 @@ nav img{
     font-family: Poppins, sans-serif;
 
 }
+
+
 h1{
     font-weight: 900;
 }
 h2, h4{
     font-weight: 300;
 }
+
+.name{
+    padding: 3rem 0;
+}
+.avatar{
+    display: flex;
+    height: 300px;
+}
+
+.avatar img{
+    width: 300px;
+    clip-path: circle(42%);
+    margin: auto;
+}
+
+@media screen and (min-width: 800px){
+    .row{
+        display: flex;
+    }
+    .avatar, .name{
+        flex: 1;
+    }
+    
+}
+
 </style>
 </head>
 <body>
@@ -51,9 +78,19 @@ h2, h4{
 </nav>
 
 <div class="container">
-    <h1>Abdur Rouf Sheikh</h1>
-    <h2>I am a Digital Service provider.</h2>
-    <h4>Address: Birnagar, Hatkholapara, <br> Birnagar Municipality, Nadia, West Bengal.</h4>
+    <div class="row">
+        <div class="name">
+            <h1>Md Abdur Rouf Sheikh</h1>
+            <h2>I am a Digital Service provider.</h2>
+            <h4>Address: Birnagar, Hatkholapara, <br> Birnagar Municipality, Nadia, West Bengal.</h4>
+        </div>
+        <div class="avatar">
+            <img src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.0-9/26239262_734745693390783_1841933886141529543_n.jpg?_nc_cat=110&_nc_ht=scontent-maa2-1.xx&oh=0c6240792db46c4801bd561553081765&oe=5CB20F2F" alt="">
+        </div>
+    </div>
+
+
+    
 </div>
 
 </body>
